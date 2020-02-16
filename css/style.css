@@ -56,7 +56,7 @@ button:focus {
   }
 
   .collapsible:after {
-    content: '\02795'; 
+    content: "\02795"; 
     font-size: 13px;
     color: black;
     font-weight: bold;
@@ -78,7 +78,7 @@ button:focus {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out; /*max-height*/
+    transition: max-height 0.5s ease-out; 
     background-color: #f1f1f1;
     width: 100%;
     margin-top: 0.7em;
@@ -92,11 +92,6 @@ button:focus {
       font-weight: bold;
       margin-right: 2em;
   }
-
-
-
-
-
 
 
 
