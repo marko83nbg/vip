@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: bold;
+    transition: 0.7s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.nav-pills .nav-link.active {
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+/*style for characteristic tab*/
+.wrapper{
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+h5 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    color: #ff8000;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.collapsible {
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    transition: 0.8s ease;
+    margin-right: 5px;
+  }
+
+  .collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .collapsible.active:after {
+    content: "\2796"; 
+  }
+  
+  .active {
+    background-color: #555;
+  }
+
+  .collapsible:hover {
+    background-color: transparent;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /*max-height*/
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: 0.7em;
+  }
+
+  .active {
+      background-color: #fff;
+  }
+
+  .item {
+      font-weight: bold;
+      margin-right: 2em;
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 770px) {
+      .nav {
+          text-align: center;
+      }
+      .nav-item {
+          width: 100%;
+          text-align: center;
+      }
+  }
+
+  @media (max-width: 265px) {
+    .characteristic {
+        font-size: 12px;
+    }
+
+    .characteristic h5{
+        font-size: 1rem;
+    }
+
+    .characteristic .btn{
+        font-size: 0.7rem;
+        padding: .2rem .5rem;
+    }
+
+    .collapsible:after {
+        font-size: 10px;
+    }
+
+    .content {
+        padding: 0 15px;
+    }
+
+    .content p{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 210px) {
+
+    .nav-link {
+        font-size: .8rem;
+        padding: .3rem .5rem;
+    }
+
+    .characteristic {
+        font-size: 10px;
+    }
+
+    .characteristic h5{
+        font-size: 0.7rem;
+    }
+
+    .characteristic .btn{
+        font-size: 0.5rem;
+        padding: .1rem .3rem;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .content p{
+        font-size: .6rem;
+    }
+
+    
+}
